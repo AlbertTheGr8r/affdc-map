@@ -25,13 +25,10 @@ jobs:
       - name: Build Release
         run: yarn gulp release
 
-      - name: List wwwroot Directory
-        run: ls -la wwwroot
-
       - name: Substitute Environment Variables in JSON
         # Adjust the path below to match the location of your simple.json inside wwwroot
         run: |
-          sed -i "s|\$ION_ACCESS_TOKEN|$ION_ACCESS_TOKEN|g" wwwroot/simple.json
+          sed -i "s|\$ION_ACCESS_TOKEN|$ION_ACCESS_TOKEN|g" wwwroot/init/simple.json
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
