@@ -35,10 +35,13 @@ jobs:
         run: |
           sed -i "s|\$ION_ACCESS_TOKEN|$ION_ACCESS_TOKEN|g" wwwroot/init/simple.json
 
+      - name: Create .nojekyll
+        run: touch wwwroot/.nojekyll
+        
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./wwwroot/build
+          path: ./wwwroot
 
       - name: Deploy to GitHub Pages
         id: deployment
