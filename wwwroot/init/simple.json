@@ -1,0 +1,60 @@
+{
+  "homeCamera": {
+    "north": 21,
+    "east": 127,
+    "south": 5,
+    "west": 116
+  },
+  "workbench": [
+    "3d-buildings"
+  ],
+  "catalog": [
+    {
+      "name": "Global",
+      "type": "group",
+      "members": [
+        {
+          "name": "3D Buildings",
+          "type": "3d-tiles",
+          "attribution": "OpenStreetMap",
+          "description": "OpenStreetMap 3D Building footprints",
+          "ionAssetId": 96188,
+          "ionAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4MThkYzE1NC03ZmI3LTQwYmItYjI2YS00MzhlMDkzZjFhOTYiLCJpZCI6NjQzMTcsImlhdCI6MTYyOTEwMDgzMH0.Cb4eZ8RftYTwllMhTJrWg1VX6-FGKjJzLBhlIMRKyew",
+          "ionServer": "https://api.cesium.com",
+          "id": "3d-buildings"
+        }
+      ]
+    },
+    {
+      "name": "Greater Manila Area",
+      "type": "group",
+      "members": [
+        {
+          "name": "Smokey Mountain, Tondo",
+          "type": "3d-tiles",
+          "attribution": "AF Florin Design and Construction, 2025",
+          "description": "A 3D reconstruction of the Smokey Mountain, Tondo",
+          "ionAssetId":  3275796,
+          "ionAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2OTNkNGZkYy03Y2FiLTQ2MDAtOTEzYi1lYzRlYjYwZTcyZTciLCJpZCI6MjkwODE1LCJpYXQiOjE3NDM3MzY5OTJ9.I5g_5I_p3lq3rnTySJpX0LLDeEpIlmAracK5lIJUokQ",
+          "ionServer": "https://api.cesium.com",
+          "id": "3d-smokey"
+        },
+        {
+          "name": "Molino, Bacoor",
+          "type": "3d-tiles",
+          "attribution": "AF Florin Design and Construction, 2025",
+          "description": "A 3D reconstruction of an open lot in Molino, Bacoor",
+          "ionAssetId":  3275940,
+          "ionAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2OTNkNGZkYy03Y2FiLTQ2MDAtOTEzYi1lYzRlYjYwZTcyZTciLCJpZCI6MjkwODE1LCJpYXQiOjE3NDM3MzY5OTJ9.I5g_5I_p3lq3rnTySJpX0LLDeEpIlmAracK5lIJUokQ",
+          "ionServer": "https://api.cesium.com",
+          "id": "3d-molino"
+        }
+      ]
+    }
+  ],
+  "viewerMode": "3dSmooth",
+  "baseMaps": {
+    "defaultBaseMapId": "basemap-openstreetmap",
+    "previewBaseMapId": "basemap-natural-earth-II"
+  }
+}
