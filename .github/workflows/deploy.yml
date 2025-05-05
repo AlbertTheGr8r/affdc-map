@@ -33,7 +33,8 @@ jobs:
       - name: Substitute Environment Variables in JSON
         # Adjust the path below to match the location of your simple.json inside wwwroot
         run: |
-          sed -i "s|\$ION_ACCESS_TOKEN|$ION_ACCESS_TOKEN|g" wwwroot/init/simple.json
+          sed -i "s|\$ION_ACCESS_TOKEN|$ION_ACCESS_TOKEN|g" wwwroot/init/simple.json && \
+          sed -i "s|\$ION_ACCESS_TOKEN|$ION_ACCESS_TOKEN|g" wwwroot/config.json
 
       - name: Create .nojekyll
         run: touch wwwroot/.nojekyll
